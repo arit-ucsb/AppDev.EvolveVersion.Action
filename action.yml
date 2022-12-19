@@ -9,5 +9,5 @@ outputs:
   version:
     description: "The database version defined by the migration scripts in scriptDirectory"
 runs:
-  using: "node12"
+  using: "node16"
   main: "dist/index.js"
