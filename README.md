@@ -19,7 +19,7 @@ Run the command `npm run build` to package the action for publishing. This will 
 ```
 - name: Get version
         id: get_version
-        uses: arit-ucsb/AppDev.EvolveVersion.Action@v1.0.0
+        uses: arit-ucsb/AppDev.EvolveVersion.Action@v3.0.0
         with:
           scriptDirectory: "./Sql_Scripts"
 ```
