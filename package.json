@@ -3,8 +3,9 @@
   "version": "3.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "jest",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
     "build": "ncc build src/index.js -o dist"
   },
   "keywords": [],

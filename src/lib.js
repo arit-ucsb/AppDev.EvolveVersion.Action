@@ -1,4 +1,4 @@
-const {readdir} = require('fs');
+import {readdir} from 'fs';
 
 /**
  * String -> Number[]
@@ -44,4 +44,4 @@ function compareVersions(a, b) {
 }
 
 
-module.exports = {getMaxScriptVersion}
+export {getMaxScriptVersion};
