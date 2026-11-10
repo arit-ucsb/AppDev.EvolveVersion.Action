@@ -1,5 +1,8 @@
-const {getMaxScriptVersion} = require('../src/lib');
-const path = require('path');
+import {getMaxScriptVersion} from '../src/lib.js';
+import path from 'path';
+import {fileURLToPath} from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 test('gets the maximum version from migration scripts directory', done => {
   const scriptDir = path.resolve(__dirname, 'scriptDirFixture');

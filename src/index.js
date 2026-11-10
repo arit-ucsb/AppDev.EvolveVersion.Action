@@ -1,11 +1,6 @@
-const {
-  debug,
-  getInput,
-  setOutput,
-  setFailed
-} = require('@actions/core');
-const github = require('@actions/github');
-const {getMaxScriptVersion} = require('./lib');
+import {debug, getInput, setOutput, setFailed} from '@actions/core';
+import * as github from '@actions/github';
+import {getMaxScriptVersion} from './lib.js';
 
 try {
   const payload = JSON.stringify(github.context.payload, undefined, 2);
